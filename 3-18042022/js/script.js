@@ -62,6 +62,16 @@ function ordenar(numeros){
          ["Blusa","15","R$ 45,00"],
          ["Sapato","35","R$ 250,00"]   
      ];
+     
+     let saida = "";
+     for (var lin = 0; lin <= 2; lin++){
+         for (var col = 0; col <= 2; col++){
+          saida += "<span>" + produtos[lin][col] + "</span>";   
+         }
+         saida += "<br>";
+     }
+      document.getElementById("painel4").innerHTML= saida;
+
  }
 
 
