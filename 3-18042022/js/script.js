@@ -66,7 +66,13 @@ function ordenar(numeros){
      let saida = "";
      for (var lin = 0; lin <= 2; lin++){
          for (var col = 0; col <= 2; col++){
-          saida += "<span>" + produtos[lin][col] + "</span>";   
+             if (lin == 0){
+                 saida += "<span class=titulo>" + produtos[lin][col] + "</span>"
+             } 
+             else{
+                  saida += "<span>" + produtos[lin][col] + "</span>";  
+             }
+            
          }
          saida += "<br>";
      }
