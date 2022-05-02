@@ -21,12 +21,18 @@ CRUD
     // importação do modulo mangoose
     const mongoose = require('mongoose');
 
-    
+    // importação do modulo de requimento
+    const cors = require('cors');
+
+     
     // criação do app refente ao express
     const app = express();
 
     // preparar p servidor para receber json
     app.use(express.json());    
+
+    // use do cors para o servidor para receber json
+    app.use(cors());
 
 /* caminho do banco de dados mongoDB
   mongodb+srv://gabriela:<password>@cluster0.702zl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority */
